@@ -1,0 +1,77 @@
+/* Меню */
+ul {
+    list-style-type: none; /* Забираємо маркери списку */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Ставимо елементи горизонтально */
+    justify-content: center; /* Центруємо меню */
+    background-color: #e0f7fa; /* Колір фону меню */
+}
+li {
+    margin: 0 15px; /* Відступи між елементами меню */
+}
+li a {
+    text-decoration: none; /* Забираємо підкреслення */
+    padding: 10px 20px;
+    color: #00695c; /* Колір тексту */
+    background-color: #ffffff; /* Початковий колір фону */
+    border-radius: 5px; /* Заокруглення */
+    transition: background-color 0.3s, color 0.3s; /* Плавний перехід */
+}
+li a:hover {
+    background-color: #2e8b57; /* Фон при наведенні */
+    color: #ffffff; /* Колір тексту при наведенні */
+}
+li a:active {
+    background-color: #1d5b3a; /* Фон при натисканні */
+}
+
+/* Основні стилі */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f8ff;
+    transition: background-color 0.5s; /* Анімація при зміні фону */
+}
+h1, h2 {
+    text-align: center;
+    color: #2e8b57;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+th {
+    background-color: #e0f7fa;
+    color: #00695c;
+}
+td {
+    background-color: #ffffff;
+}
+
+/* Стилі для кнопки */
+.change-bg-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #2e8b57;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.change-bg-button:hover {
+    background-color: #1d5b3a;
+}
+.change-bg-button:active {
+    transform: scale(0.98);
+}
